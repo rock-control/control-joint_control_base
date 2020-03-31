@@ -1,7 +1,5 @@
 rock_library(trajectory_generation
-    SOURCES Dummy.cpp
-    HEADERS Dummy.hpp)
-
-rock_executable(trajectory_generation_bin Main.cpp
-    DEPS trajectory_generation)
+    SOURCES motion_constraint.cpp
+    HEADERS motion_constraint.hpp constrained_joints_cmd.hpp reflexxes_types.hpp
+    DEPS_PKGCONFIG base-types)
 
