@@ -1,8 +1,6 @@
-trajectory_generation
+joint_control_base
 =============
-Typedefs for the trajectory generation task library
-
-
+Typedefs for the motion generation and control
 
 License
 -------

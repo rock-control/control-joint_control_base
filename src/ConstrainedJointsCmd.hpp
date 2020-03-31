@@ -2,9 +2,9 @@
 #define CONSTRAINED_JOINTS_CMD_HPP
 
 #include <base/commands/Joints.hpp>
-#include "motion_constraint.hpp"
+#include "MotionConstraint.hpp"
 
-namespace trajectory_generation {
+namespace joint_control_base {
 
 /** Named vector of Joints command with motion constraints, i.e. constrained commands for all the joints of a robot*/
 struct ConstrainedJointsCmd : public base::commands::Joints{

@@ -1,5 +1,5 @@
 <package>
-  <description brief="Typedefs for the trajectory generation task library">
+  <description brief="Types for motion generation and control">
   
   </description>
   <author>Dennis Mronga/dennis.mronga@dfki.de</author>

@@ -1,6 +1,6 @@
-#include "motion_constraint.hpp"
+#include "MotionConstraint.hpp"
 
-namespace trajectory_generation {
+namespace joint_control_base {
 
 MotionConstraint::MotionConstraint(){
     max.position      = base::unset<float>();
@@ -10,25 +10,32 @@ MotionConstraint::MotionConstraint(){
     max_jerk          = base::unset<float>();
 }
 
-void MotionConstraint::validate() const{
-#ifdef USING_REFLEXXES_TYPE_IV
+void MotionConstraint::validatePositionLimits() const{
     if(!hasMaxPosition())
-        throw std::invalid_argument("Motion Constraints: Maximum position is invalid");
+        throw std::invalid_argument("Motion Constraints: Max. position is invalid");
     if(!hasMinPosition())
-        throw std::invalid_argument("Motion Constraints: Minimum position is invalid");
+        throw std::invalid_argument("Motion Constraints: Min. position is invalid");
     if(max.position <= min.position)
         throw std::invalid_argument("Motion Constraints: Max. position has to be > min. position");
-#endif
+}
+
+void MotionConstraint::validateVelocityLimit() const{
     if(!hasMaxVelocity())
-        throw std::invalid_argument("Motion Constraints: Maximum speed is invalid");
-    if(!hasMaxAcceleration())
-        throw std::invalid_argument("Motion Constraints: Maximum acceleration is invalid");
-    if(!hasMaxJerk())
-        throw std::invalid_argument("Motion Constraints: Maximum jerk is invalid");
+        throw std::invalid_argument("Motion Constraints: Max. speed is invalid");
     if(max.speed <= 0)
         throw std::invalid_argument("Motion Constraints: Max. speed has to be > 0");
+}
+
+void MotionConstraint::validateAccelerationLimit() const{
+    if(!hasMaxAcceleration())
+        throw std::invalid_argument("Motion Constraints: Max. acceleration is invalid");
     if(max.acceleration <= 0)
         throw std::invalid_argument("Motion Constraints: Max. acceleration has to be > 0");
+}
+
+void MotionConstraint::validateJerkLimit() const{
+    if(!hasMaxJerk())
+        throw std::invalid_argument("Motion Constraints: Max. jerk is invalid");
     if(max_jerk <= 0)
         throw std::invalid_argument("Motion Constraints: Max. jerk has to be > 0");
 }
