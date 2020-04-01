@@ -3,7 +3,7 @@
   
   </description>
   <author>Dennis Mronga/dennis.mronga@dfki.de</author>
-  <license></license>
+  <license>LGPL v2 or later</license>
   <url>http://</url>
   <logo>http://</logo>
   <depend package="base/cmake" />
