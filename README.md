@@ -4,7 +4,7 @@ Typedefs for the motion generation and control
 
 License
 -------
-dummy-license
+LGPL v2 or later
 
 Installation
 ------------
