@@ -4,7 +4,7 @@ Typedefs for the motion generation and control
 
 License
 -------
-LGPL v2 or later
+BSD 3-Clause
 
 Installation
 ------------
