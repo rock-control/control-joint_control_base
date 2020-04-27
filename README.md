@@ -25,7 +25,7 @@ most of its "library" packages (such as this one) to follow best practices. See
 [this page](http://rock-robotics.org/stable/documentation/packages/outside_of_rock.html)
 for installation instructions outside of Rock.
 
-## Rock CMake Macros
+### Rock CMake Macros
 
 This package uses a set of CMake helper shipped as the Rock CMake macros.
 Documentations is available on [this page](http://rock-robotics.org/stable/documentation/packages/cmake_macros.html).
