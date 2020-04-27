@@ -1,11 +1,20 @@
 <package>
+  <name>control-joint_control_base</name>
   <description brief="Types for motion generation and control">
-  
   </description>
   <author>Dennis Mronga/dennis.mronga@dfki.de</author>
-  <license>LGPL v2 or later</license>
-  <url>http://</url>
-  <logo>http://</logo>
+  <maintainer>Dennis Mronga/dennis.mronga@dfki.de</maintainer>
+  <license>BSD-3-Clause</license>
+  <url>https://github.com/rock-control/control-joint_control_base</url>
+
   <depend package="base/cmake" />
   <depend package="base/types" />
+
+  <keywords>
+    <keyword>control</keyword> 
+  </keywords>
+
+  <stage>0</stage>
+  <use>multi project</use>
+  <activity>active</activity>  
 </package>
