@@ -17,18 +17,18 @@ See [manifest.xml](https://github.com/rock-control/control-joint_control_base/bl
 ## Installation
 
 The easiest way to build and install this package is to use Rock's build system.
-See [this page](http://rock-robotics.org/stable/documentation/installation.html)
+See [this page](https://www.rock-robotics.org/documentation/about/index.html)
 on how to install Rock.
 
 However, if you feel that it's too heavy for your needs, Rock aims at having
 most of its "library" packages (such as this one) to follow best practices. See
-[this page](http://rock-robotics.org/stable/documentation/packages/outside_of_rock.html)
+[this page](https://www.rock-robotics.org/documentation/packages/outside_of_rock.html)
 for installation instructions outside of Rock.
 
 ### Rock CMake Macros
 
 This package uses a set of CMake helper shipped as the Rock CMake macros.
-Documentations is available on [this page](http://rock-robotics.org/stable/documentation/packages/cmake_macros.html).
+Documentations is available on [this page](http://rock-robotics.org/documentation/packages/cmake_macros.html).
 
 ## Documentation
 
