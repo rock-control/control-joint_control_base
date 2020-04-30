@@ -1,5 +1,5 @@
 <package>
-  <name>control-joint_control_base</name>
+  <name>joint_control_base</name>
   <description brief="Types for motion generation and control">
   </description>
   <author>Dennis Mronga/dennis.mronga@dfki.de</author>
